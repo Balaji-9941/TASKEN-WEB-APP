@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="./style.css"/>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    />
+<title>Calculator</title>
+</head>
+<body>
+    <div class="calc_container">
+        <div class="calculator">
+            <input type="text" placeholder="0" id="text-screen"/>
+            <input type="text" id="text-screen2"/>
+            <div class="buttons">
+            <button onclick="clearall()" class="clear"><i class="fa-solid fa-c" style="color: #ff0000;"></i></button>
+            <button onclick="display('%')" class="op">%</button>
+            <button onclick="del()" class="clear"><i class="fa-solid fa-delete-left" style="color: #63E6BE;"></i></button>
+            <button onclick="display('/')" class="op">/</button>
+            <button onclick="display('7')" >7</button>
+            <button onclick="display('8')" >8</button>
+            <button onclick="display('9')" >9</button>
+            <button onclick="display('*')" class="op">*</button>
+            <button onclick="display('4')" >4</button>
+            <button onclick="display('5')" >5</button>
+            <button onclick="display('6')" >6</button>
+            <button onclick="display('-')" class="op">-</button>
+            <button onclick="display('1')" >1</button>
+            <button onclick="display('2')" >2</button>
+            <button onclick="display('3')" >3</button>
+            <button onclick="display('+')" class="op">+</button>
+            <button onclick="display('0')" >0</button>
+            <button onclick="display('.')" >.</button>
+            <button onclick="calculate()" class="ope">=</button>
+        </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+    </body>
+</html>
