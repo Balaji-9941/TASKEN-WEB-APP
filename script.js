@@ -10,7 +10,7 @@ const deletemodal=document.querySelector(".delete_card");
 
 
 const htmlTaskContent=({id,url,title,description,type,deadline}) =>`
-<div class='col-md-6 col-lg-4 mt-3' id=${id}>
+<div class='col-md-6 col-lg-4 col-sm-1 mt-3' id=${id}>
 <div class='card shadow-sm task_card'>
  <div class='card-header d-flex justify-content-end task__card__header bg-warning'>
           <button type='button' class='btn btn-primary m-1' id=${id} name=${id} data-bs-target="#editModal" data-bs-toggle="modal" onclick="editor.apply(this,arguments)">
